@@ -19,7 +19,7 @@
             android:layout_marginTop="@dimen/app_portfolio_title_margin_top"
             android:layout_marginBottom="@dimen/app_portfolio_title_margin_bottom"
             android:textSize="@dimen/app_portfolio_title_text_size"
-            android:textColor="#006699"
+            android:textColor="@color/app_portfolio_title_color"
             android:textStyle="bold"
             tools:text="@string/app_portfolio_title"
             android:text="@string/app_portfolio_title" />

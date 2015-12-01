@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="app_portfolio_title_color">#006699</color>
+    <color name="app_portfolio_button_text_color">@android:color/black</color>
+    <color name="app_portfolio_button_background">#F08C35</color>
+    <color name="app_portfolio_button_featured_text_color">@android:color/white</color>
+    <color name="app_portfolio_button_featured_background">#FF4D4D</color>
 </resources>
