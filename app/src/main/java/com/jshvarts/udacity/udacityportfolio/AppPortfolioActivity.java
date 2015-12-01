@@ -11,10 +11,11 @@ import android.widget.Toast;
 
 public class AppPortfolioActivity extends AppCompatActivity {
 
+    private static final String TEXT_BUTTON_DESCRIPTION = "This button will launch ";
     private static final String TEXT_APP = " App";
     private static final String TEXT_ADD_EXCLAMATION_MARK = "!";
     private static final String TEXT_ADD_APP_EXCLAMATION_MARK = TEXT_APP + TEXT_ADD_EXCLAMATION_MARK;
-    private static final String LOG_TAG = AppPortfolioActivity.class.getSimpleName();
+    private static final String TAG = AppPortfolioActivity.class.getSimpleName();
 
     private Toast appToast;
 
@@ -40,7 +41,7 @@ public class AppPortfolioActivity extends AppCompatActivity {
     private void setupButton(final Button button) {
         String buttonText = button.getText().toString();
         if (TextUtils.isEmpty(buttonText)) {
-            Log.e(LOG_TAG, "empty button text!");
+            Log.e(TAG, "empty button text!");
             return;
         }
         final String msg = buildMsg(buttonText);
@@ -65,7 +66,7 @@ public class AppPortfolioActivity extends AppCompatActivity {
      */
     private String buildMsg(String buttonText) {
         StringBuilder msg = new StringBuilder();
-        msg.append("This button will launch ");
+        msg.append(TEXT_BUTTON_DESCRIPTION);
         msg.append(buttonText);
         msg.append(buttonText.endsWith(TEXT_APP) ? TEXT_ADD_EXCLAMATION_MARK : TEXT_ADD_APP_EXCLAMATION_MARK);
         return msg.toString();
