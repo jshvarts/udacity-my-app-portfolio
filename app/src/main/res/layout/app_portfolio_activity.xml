@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppPortfolioActivity">
+
+    <LinearLayout
+        android:id="@+id/app_porfolio_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/app_portfolio_title_margin_top"
+            android:layout_marginBottom="@dimen/app_portfolio_title_margin_bottom"
+            android:textSize="@dimen/app_portfolio_title_text_size"
+            android:textColor="#006699"
+            android:textStyle="bold"
+            tools:text="@string/app_portfolio_title"
+            android:text="@string/app_portfolio_title" />
+
+        <Button
+            style="@style/AppPortfolioButton"
+            android:text="@string/app_portfolio_button_text_spotify_streamer"
+            tools:text="@string/app_portfolio_button_text_spotify_streamer" />
+
+        <Button
+            style="@style/AppPortfolioButton"
+            android:text="@string/app_portfolio_button_text_scores_app"
+            tools:text="@string/app_portfolio_button_text_scores_app" />
+
+        <Button
+            style="@style/AppPortfolioButton"
+            android:text="@string/app_portfolio_button_text_library_app"
+            tools:text="@string/app_portfolio_button_text_library_app" />
+
+        <Button
+            style="@style/AppPortfolioButton"
+            android:text="@string/app_portfolio_button_text_build_it_bigger"
+            tools:text="@string/app_portfolio_button_text_build_it_bigger" />
+
+        <Button
+            style="@style/AppPortfolioButton"
+            android:text="@string/app_portfolio_button_text_xyz_reader"
+            tools:text="@string/app_portfolio_button_text_xyz_reader" />
+
+        <Button
+            style="@style/AppPortfolioButton.Featured"
+            android:text="@string/app_portfolio_button_text_capstone_my_own_app"
+            tools:text="@string/app_portfolio_button_text_capstone_my_own_app" />
+
+    </LinearLayout>
+
+</ScrollView>
